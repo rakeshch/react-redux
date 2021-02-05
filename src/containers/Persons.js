@@ -27,7 +27,7 @@ class Persons extends Component {
     render () {
         return (
             <div>
-                <AddPerson personAdded={(name, age) => this.props.onPersonAdded(name, age)} />
+                <AddPerson personAdded={this.props.onPersonAdded} />
                 {this.props.storedPersons.map(person => (
                     <Person 
                         key={person.id}
